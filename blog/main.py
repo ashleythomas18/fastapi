@@ -113,7 +113,7 @@ def show(id, response: Response, db:Session=Depends(get_db)):         #this db:s
 
 def create_blog(request: schemas.Blog):
     
-    return {'data': f'Blog is created with title  {request.title}'}
+    return {'data': f'Blog is created with title as {request.title}'}
     
 #if __name__== "__main__":
 #    uvicorn.run(app,host="127.0.0.1", port=8000)
